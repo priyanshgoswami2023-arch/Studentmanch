@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <defs>
+    <linearGradient id="bgJob" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#091526"/>
+      <stop offset="100%" stop-color="#064E3B"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgJob)"/>
+  <circle cx="170" cy="130" r="140" fill="#10B981" fill-opacity="0.14"/>
+  <rect x="170" y="135" width="460" height="255" rx="22" fill="#0F172A" stroke="#059669" stroke-width="2"/>
+  <rect x="325" y="95" width="150" height="40" rx="10" stroke="#34D399" stroke-width="3"/>
+  <rect x="170" y="235" width="460" height="4" fill="#1E293B"/>
+  <rect x="375" y="218" width="50" height="36" rx="8" fill="#10B981"/>
+  <rect x="215" y="170" width="140" height="14" rx="4" fill="#34D399"/>
+  <rect x="215" y="275" width="220" height="12" rx="4" fill="#475569"/>
+  <rect x="215" y="302" width="160" height="12" rx="4" fill="#334155"/>
+  <circle cx="545" cy="315" r="36" fill="#10B981" fill-opacity="0.2" stroke="#34D399" stroke-width="2"/>
+  <path d="M530 315L541 326L562 304" stroke="#34D399" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

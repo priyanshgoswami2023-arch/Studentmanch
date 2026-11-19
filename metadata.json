@@ -1,0 +1,8 @@
+{
+  "name": "Student Manch",
+  "description": "Student Manch (studentmanch.in) — Bilingual Hindi & English student portal for India featuring interactive quizzes with top-3 podium leaderboards, important exam notices with PDFs, Indian college guides, and curated education & scholarship news.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

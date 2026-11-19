@@ -1,0 +1,86 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-display: 'Plus Jakarta Sans', 'Noto Sans Devanagari', system-ui, sans-serif;
+    --font-body: 'DM Sans', 'Noto Sans Devanagari', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  html {
+    font-family: var(--font-body);
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono-tabular {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Neon glowing button effects for the 4 primary action tiles */
+@keyframes neonPulseBlue {
+  0%, 100% {
+    box-shadow: 0 0 18px rgba(56, 189, 248, 0.32), 0 0 40px rgba(59, 130, 246, 0.16);
+  }
+  50% {
+    box-shadow: 0 0 28px rgba(56, 189, 248, 0.55), 0 0 58px rgba(59, 130, 246, 0.28);
+  }
+}
+
+@keyframes neonPulsePurple {
+  0%, 100% {
+    box-shadow: 0 0 18px rgba(168, 85, 247, 0.34), 0 0 40px rgba(99, 102, 241, 0.16);
+  }
+  50% {
+    box-shadow: 0 0 28px rgba(168, 85, 247, 0.58), 0 0 58px rgba(99, 102, 241, 0.3);
+  }
+}
+
+@keyframes neonPulsePink {
+  0%, 100% {
+    box-shadow: 0 0 18px rgba(236, 72, 153, 0.32), 0 0 40px rgba(168, 85, 247, 0.16);
+  }
+  50% {
+    box-shadow: 0 0 28px rgba(236, 72, 153, 0.55), 0 0 58px rgba(168, 85, 247, 0.28);
+  }
+}
+
+@keyframes neonPulseTri {
+  0%, 100% {
+    box-shadow: 0 0 18px rgba(99, 102, 241, 0.34), 0 0 42px rgba(236, 72, 153, 0.18);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.52), 0 0 60px rgba(236, 72, 153, 0.32);
+  }
+}
+
+.glow-btn-blue {
+  animation: neonPulseBlue 3.2s ease-in-out infinite;
+}
+
+.glow-btn-purple {
+  animation: neonPulsePurple 3.4s ease-in-out infinite;
+}
+
+.glow-btn-pink {
+  animation: neonPulsePink 3.6s ease-in-out infinite;
+}
+
+.glow-btn-tri {
+  animation: neonPulseTri 3.8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glow-btn-blue,
+  .glow-btn-purple,
+  .glow-btn-pink,
+  .glow-btn-tri {
+    animation: none;
+  }
+}
